@@ -39,12 +39,12 @@ getBool _         =   Nothing
 
 -- Get Object
 -- Not sure what will be the type signature
--- getObject :: JValue   ->  Maybe JObject
+getObject :: JValue   ->  Maybe [(String, JValue)]
 getObject (JObject o) =   Just o
 getObject _           =   Nothing
 
 -- Get JSON Array
--- getArray :: JValue  ->  Maybe JValue
+getArray :: JValue  ->  Maybe [JValue]
 getArray (JArray a) =   Just a
 getArray _          =   Nothing
 
