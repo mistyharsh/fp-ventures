@@ -1,3 +1,5 @@
+-- This module defines a data structure for JSON
+
 module SimpleJSON (
   JValue(..),      -- Export Type Constructor JValue along with all Data Constructors
   getString,
