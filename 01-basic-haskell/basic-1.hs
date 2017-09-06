@@ -27,3 +27,10 @@ tup = (True, "Hello")
 -- fst and snd only works on 2 point tuple
 firstTup = fst tup
 lastTup = snd tup
+
+
+-- Forward references are allowed in Haskell
+-- Unbounded variable r is defined later after area function.
+-- Like JavaScript, everything is hoisted per se (Technically not right distinction)
+area d = 3.14 * r * r
+r = 10
