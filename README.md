@@ -23,7 +23,7 @@ concat :: Foldable t => t [a] -> a
 -- Note, Foldable t => t [a] is equivalent to [[a]]. Think Foldable t as some list.
 ```
 
-**Foldable** type is less formally known as **concatable** type. String type is foldable but not Char type.
+**Foldable** type is less formally known as **concatable** type. String type is foldable but not Char type. Essential thing here is that concatable returns a same type. So concatenation of two strings produces string. (Dr. Booleans's videos for more details)
 
 ### List operator
 (!!) is an operator on list to get item at certain index in a list.
