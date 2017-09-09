@@ -35,3 +35,31 @@ A type signature can have multiple type constraints:
 (Ord a, Num a) => a -> Ordering
 ```
 Here it represents conjunction or product.
+
+## Polymorphism
+In Haskell, type signatures may have three kinds of types:
+    1. Concrete
+    2. Constrained polymorphic
+    3. Parametrically polymorphic
+
+Book says this:
+In Haskell, polymorphism divides into two categories:
+    1. Parametric polymorphism
+    2. Constrained polymorphic / Ad-hoc polymorphism (using typeclasses)
+
+Wikipedia says this:
+Three types of polymorphism
+    1. Ad hoc polymorphism
+        Function overloading, heterogeneous implementation
+        Static /compile time polymorphism in OOP
+    2. Parametric polymorphism
+        Generic programming OOP,
+        Just polymorphism in Functional programming
+    3. Subtyping
+        Just polymorphism in OOP, inheritance / interfaces, subtype polymorphism
+        Dynamic / runtime polymorphism
+
+After reading wikipedia, it is clear that book is wrong about Ad-hoc polymorphism.
+
+## Declaring type signature
+It is possible, though uncommon, to declare types locally with let and where clauses. Here is an example in supplement file

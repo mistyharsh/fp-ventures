@@ -25,6 +25,18 @@ getAbsolute a = if a < 0
                 then a * (-1)
                 else a
 
--- Test type
+-- Test type in GHCi for this function
 jackal :: (Ord a, Eq b) => a -> b -> a
 jackal a b = a
+
+-- 'where' statement is as good as writing haskell expression in local state.
+-- What you can do without 'where' is the same thing you can do without 'where'
+-- It is just introducing another scope
+
+triple x = tripleItYo x
+    where tripleItYo :: Integer -> Integer
+          tripleItYo y = y * 3
+
+-- From page 191, how can I solve?
+-- munge :: (x -> y) -> (y -> (w, z)) -> x -> w
+munge f1 f2 x =  fst $ f2 $ f1 x

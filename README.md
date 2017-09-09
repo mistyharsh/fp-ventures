@@ -25,5 +25,6 @@ concat :: Foldable t => t [a] -> a
 
 **Foldable** type is less formally known as **concatable** type. String type is foldable but not Char type. Essential thing here is that concatable returns a same type. So concatenation of two strings produces string. (Dr. Booleans's videos for more details)
 
+Or probably I am wrong. **Foldable** may not be **concatable**.
 ### List operator
 (!!) is an operator on list to get item at certain index in a list.
