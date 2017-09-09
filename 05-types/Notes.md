@@ -62,4 +62,6 @@ Three types of polymorphism
 After reading wikipedia, it is clear that book is wrong about Ad-hoc polymorphism.
 
 ## Declaring type signature
-It is possible, though uncommon, to declare types locally with let and where clauses. Here is an example in supplement file
+It is possible, though uncommon, to declare types locally with let and where clauses. Here is an example in supplement file.
+
+Haskell type inference infers the most polymorphic type that works.
