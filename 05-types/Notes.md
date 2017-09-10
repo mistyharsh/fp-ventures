@@ -64,4 +64,7 @@ After reading wikipedia, it is clear that book is wrong about Ad-hoc polymorphis
 ## Declaring type signature
 It is possible, though uncommon, to declare types locally with let and where clauses. Here is an example in supplement file.
 
-Haskell type inference infers the most polymorphic type that works.
+**Haskell type inference infers the most polymorphic type that works.**
+
+## Type declaration
+Types declared using keyword `newtype` is special case of data declarations. `newtype` is different in that it permits only one constructor and only one field.

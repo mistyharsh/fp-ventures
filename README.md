@@ -28,3 +28,8 @@ concat :: Foldable t => t [a] -> a
 Or probably I am wrong. **Foldable** may not be **concatable**.
 ### List operator
 (!!) is an operator on list to get item at certain index in a list.
+
+
+## Guidelines
+It is rarely a good idea to write a **partial function**. They will cause runtime exception.
+Just like if-else, `case` statements are expressions.
