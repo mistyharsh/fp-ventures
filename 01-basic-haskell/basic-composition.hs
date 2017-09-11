@@ -21,3 +21,10 @@ makeListOfFive2 x = take 5 . enumFrom $ x
 -- If we don't do this we end with error
 makeListOfFiveFault x = take 5 . enumFrom x
 -- It reduces to `take 5 . enumFrom 3`
+
+-- Another example of using $
+inc :: Num a => a -> a
+inc = (+1)
+
+incThree1 = inc . inc . inc $ 0
+incThree2 = (inc . inc . inc) 0
