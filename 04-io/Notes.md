@@ -17,3 +17,6 @@ Short answer: Yes, that f is referential transparent.
 
 Whenever you look at it, it equals the same value.
 But that doesn't mean it will always bind the same value.
+
+# Functors
+You can think of `fmap` as either a function that takes a function and a functor and then maps that function over the functor, or you can think of it as a function that takes a function and lifts that function so that it operates on functors. Both views are correct and in Haskell, equivalent.

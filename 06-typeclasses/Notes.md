@@ -46,3 +46,5 @@ There is no traditional inheritance in Haskell for subtype. However, typeclass i
 
 ## Automatic derivation of typeclasses
 In Haskell we have **derived instances** so that obvious or common typeclasses, such as `Eq`, `Enum`, `Ord`, and `Show` can have the instances generated based only on how the datatype is defined. This is so programmers can make use of these conveniences without writing the code themselves, over and over. And yet, this is much better than other languages like Java, JS or C# where you always have common class Object or something similar.
+
+Typeclasses often confused with classes in languages like Java, Python, C++ and the like, which then baffles a lot of people. In those languages, classes are a blueprint from which we then create objects that contain state and can do some actions. Typeclasses are more like interfaces. We don't make data from typeclasses. Instead, we first make our data type and then we think about what it can act like. If it can act like something that can be equated, we make it an instance of the `Eq` typeclass. If it can act like something that can be ordered, we make it an instance of the `Ord` typeclass.
