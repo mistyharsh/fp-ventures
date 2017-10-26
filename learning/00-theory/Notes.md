@@ -19,4 +19,4 @@ add (1 + 4) y = (5) + y + (5)
 ```
 
 ## Evaluation
-In Haskell, evaluation is simplification. Haskell uses Beta Normal Form. BNF is when you cannot beta reduce the terms any further. This corresponds to "fully evaluated" expression. In programming context, we would call this a "fully executed" program
+In Haskell, evaluation is simplification. Haskell uses Beta Normal Form. BNF is when you cannot beta reduce the terms any further. This corresponds to "fully evaluated" expression. In programming context, we would call this a "fully executed" program.

@@ -11,7 +11,7 @@ Unlike other languages, Haskell does not provide universal stringification (Show
 
 ## Guidelines
 Keep your typeclass instances for a type in the same file as type.
-When we are automatically derving `Ord` typeclass, Data Constructor values to the left are less than values to the right:
+When we are automatically deriving `Ord` typeclass, Data Constructor values to the left are less than values to the right:
 
 ```haskell
 data DayOfWeek = Mon | Tue | Wed | Thu | Fri | Sat | Sun deriving (Ord)

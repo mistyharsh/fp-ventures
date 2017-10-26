@@ -22,11 +22,12 @@ In Haskell, you cannot create **untyped data**. Everything originates in a data 
 
 Just because you don't often declare type doesn't mean that Haskell gives a free hand. It infers types, aka, type inference.
 
-Note: Symbol ```->``` is actually a type constructor for function. This works:
+Note: Symbol `->` is actually a type constructor for function. This works:
 ```haskell
 :info (->)
 data (->) t1 t2
 ```
+
 This signifies that it takes t1 and returns t2. So every Haskell function takes exactly one argument and returns one value. This type has no data constructors. Thus **functions are values**.
 
 A type signature can have multiple type constraints:
@@ -62,7 +63,7 @@ Three types of polymorphism
 After reading wikipedia, it is clear that book is wrong about Ad-hoc polymorphism.
 
 ## Declaring type signature
-It is possible, though uncommon, to declare types locally with let and where clauses. Here is an example in supplement file.
+It is possible, though uncommon, to declare types locally with `let` and `where` clauses. Here is an example in supplement file.
 
 **Haskell type inference infers the most polymorphic type that works.**
 
