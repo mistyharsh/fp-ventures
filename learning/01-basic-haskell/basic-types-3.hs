@@ -71,3 +71,6 @@ lend3 amount balance
     | otherwise         = MyJust newBalance
     where   reserve     = 100
             newBalance  = balance - amount
+
+-- Example of as pattern
+getFirstItem all@ (x:xs) = "The first item in " ++ all ++ " is " + x
