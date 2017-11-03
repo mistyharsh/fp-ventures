@@ -1,5 +1,10 @@
 Actions are defined rather than invoked within the expression language of Haskell. Evaluating the definition of an action doesn't actually cause the action to happen. Rather, the invocation of actions takes place outside of the expression evaluation we have considered up to this point.
 
+# Declaring variables within do/monad/context
+When using simple file, we don't declare variables/values using `let` notation. However if we are within `ghci`, then we need to use `let` to declare variable. It is because `ghci` is always running in execution context, aka, `IO ()` monad.
+
+So whenever you are using monad, you can use let to declare variable or call pure function and store its value in variable.
+
 # Understanding Haskell IO
 
 https://stackoverflow.com/questions/34280735/understanding-pure-functions-in-haskell-with-io
