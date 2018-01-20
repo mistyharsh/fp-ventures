@@ -30,4 +30,4 @@ In general, as system designers, you're forced with the necessity to make decisi
 
 The problem is, there's a very, very narrow line between deferring decisions and outright procrastination. So you'd like to make progress, but also at the same time, never be bound by the consequences of your decisions. Data abstraction is one way of doing things. What we did is we used wishful thinking.
 
-Blue the line between what's data and what's procedure.
+Blur the line between what's data and what's procedure.
