@@ -9,6 +9,6 @@ But when designing a complex system, mere horizontal boundary is not enough. We 
 
 There is a strategy for implementing generic operators. That strategy has a name: it's called **dispatch on type**. Vertical boundary problem introduces multiple issues:
 1. Namespacing (multiple representations of complex number)
-2. What happens when you bri   ng somebody new into the system. It should not affect existing guys.
+2. What happens when you bring somebody new into the system. It should not affect existing guys.
 
 Using generic operators is called as data directed programming.
