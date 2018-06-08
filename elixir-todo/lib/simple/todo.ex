@@ -23,16 +23,16 @@ defmodule TodoSimple do
 
   # Create new Todo list
   # Defining a function this way is syntactic sugar
-  def new1() do
+  def new() do
     %{}
   end
 
-  # Shortcut with syntactice sugar
+  # Shortcut with syntactic sugar
   def new2, do: %{}
 
   # Keyword list desugaring
   def new3, do: %{}
 
   # Keyword list further desugaring
-  def new, [{:do, %{}}]
+  def new4, [{:do, %{}}]
 end
