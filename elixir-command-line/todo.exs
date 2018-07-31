@@ -22,7 +22,14 @@ defmodule Todo do
 
   end
 
+  def get_all(%Todo{entries: entries}) do
+    entries
+  end
 
+  def delete(todo_list, id) do
+    entries = Map.delete(todo_list.entries, id)
 
+    %{todo_list | :entries => entries }
+  end
 
 end
